@@ -72,4 +72,4 @@ Thank you for stopping by this little corner of positivity.
 
 Take what you need, leave a little kindness, and remember:
 
-**You are allowed to take life one little step at a time.** 🌸
+**You are allowed to take life one little step at a time.** 
