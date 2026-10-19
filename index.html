@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f1e8">
+  <title>A Little Light | Daily Positivity</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+
+    
+:root {
+  --cream: #fff7f5;
+  --green: #805463;
+  --muted: #a9858d;
+  --gold: #d99aa5;
+}
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      padding: 28px 18px;
+
+      font-family: 'DM Sans', sans-serif;
+      color: var(--green);
+      
+background:
+  radial-gradient(
+    ellipse at 15% 15%,
+    #ffe1e8 0%,
+    transparent 38%
+  ),
+  radial-gradient(
+    ellipse at 90% 85%,
+    #f8dce8 0%,
+    transparent 42%
+  ),
+  #fff7f9;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 720px;
+      text-align: center;
+      animation: appear 1s ease both;
+    }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .sun {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #f5d9a4, #d6a65c);
+      box-shadow: 0 0 60px #e8c98c88;
+      animation: glow 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      to { box-shadow: 0 0 90px #e8c98cbb; }
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(42px, 8vw, 66px);
+      font-weight: 500;
+      margin: 13px 0;
+      letter-spacing: -1.8px;
+    }
+
+    h1 em {
+      color: #a17b45;
+      font-weight: 500;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 15px;
+      max-width: 430px;
+      margin: 0 auto 32px;
+    }
+
+    .card {
+      padding: clamp(28px, 7vw, 52px);
+      border: 1px solid #ffffffd9;
+      border-radius: 26px;
+      background: #ffffff87;
+      box-shadow: 0 18px 60px #52644712;
+      backdrop-filter: blur(12px);
+    }
+
+    .date {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--muted);
+      margin-bottom: 27px;
+    }
+
+    .quote-mark {
+      font-family: Georgia, serif;
+      font-size: 58px;
+      color: var(--gold);
+      line-height: .7;
+      margin-bottom: 20px;
+    }
+
+    #message {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(25px, 5vw, 36px);
+      line-height: 1.5;
+      font-weight: 500;
+      min-height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #meaning {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.9;
+      max-width: 430px;
+      margin: 22px auto 0;
+    }
+
+    .divider {
+      height: 1px;
+      width: 48px;
+      background: var(--gold);
+      margin: 30px auto;
+    }
+
+    .label {
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    #affirmation {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    button {
+      padding: 13px 20px;
+      border-radius: 40px;
+      font-family: inherit;
+      font-size: 13px;
+      cursor: pointer;
+      transition: .25s ease;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+    }
+
+    .primary {
+      color: white;
+      background: var(--green);
+      border: 1px solid var(--green);
+    }
+
+    .secondary {
+      color: var(--green);
+      background: transparent;
+      border: 1px solid #cbd0c4;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      line-height: 2;
+      color: var(--muted);
+    }
+
+    .heart {
+      color: #b27b66;
+    }
+
+    @media (max-width: 480px) {
+      .card { border-radius: 20px; }
+      .sun { width: 60px; height: 60px; }
+      .actions button { width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <div class="sun" aria-hidden="true"></div>
+
+    <p class="eyebrow">Your daily moment of peace</p>
+
+    <h1>A Little <em>Light.</em></h1>
+
+    <p class="subtitle">
+      A gentle reminder that life is worth living,
+      growth takes time, and every new day is another chance.
+    </p>
+
+    <section class="card" aria-label="Today's positive message">
+
+      <p class="date" id="today"></p>
+
+      <div class="quote-mark" aria-hidden="true">“</div>
+
+      <div id="daily-content" aria-live="polite">
+        <p id="message">Loading today's message...</p>
+        <p id="meaning"></p>
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="label">Carry this with you</p>
+      <p id="affirmation"></p>
+
+      <div class="actions">
+        <button class="primary" id="another">
+          A thought for today ↗
+        </button>
+
+        <button class="secondary" id="share">
+          Share the light ♡
+        </button>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      Take a breath. Trust your journey. Keep going.<br>
+      Made with <span class="heart">♥</span> for your everyday happiness.
+    </footer>
+
+  </main>
+
+  <script>
+    const messages = [
+      {
+        quote: "You do not have to see the whole staircase. Just take the first step.",
+        meaning: "Big changes begin with small actions. You don't need every answer today; you only need the courage to begin.",
+        affirmation: "I trust myself to take one small step forward."
+      },
+      {
+        quote: "Your worth is not measured by how much you achieve.",
+        meaning: "You are a human being, not a checklist. Rest, laughter, kindness, and simply being alive matter, too.",
+        affirmation: "I am enough, even on my quietest days."
+      },
+      {
+        quote: "The flower does not worry about competing with the flower next to it.",
+        meaning: "Your journey has its own timing. Celebrate other people's success without using it as a reason to doubt your own.",
+        affirmation: "I allow myself to grow at my own pace."
+      },
+      {
+        quote: "Sometimes the most productive thing you can do is rest.",
+        meaning: "Pausing is not giving up. Give your mind and body the care they need to help you keep going.",
+        affirmation: "I give myself permission to rest without guilt."
+      },
+      {
+        quote: "Be the reason someone believes in the goodness of people.",
+        meaning: "A sincere compliment, a patient response, or a little generosity can change someone's entire day.",
+        affirmation: "I choose kindness, even in small moments."
+      },
+      {
+        quote: "You have survived days you once thought you couldn't.",
+        meaning: "Remember the strength that brought you here. Difficult moments are real, but they do not tell your entire story.",
+        affirmation: "I am stronger than I sometimes realize."
+      },
+      {
+        quote: "Peace begins when you stop arguing with what you cannot control.",
+        meaning: "Give your energy to your choices, your responses, and the things you can change. Let the rest breathe.",
+        affirmation: "I release what is beyond my control."
+      },
+      {
+        quote: "A meaningful life is built from ordinary moments lived with love.",
+        meaning: "You don't need extraordinary events to have a beautiful life. Notice the people, little joys, and quiet blessings already around you.",
+        affirmation: "I choose to be present for my own life."
+      },
+      {
+        quote: "Every sunrise is an invitation, not an obligation.",
+        meaning: "You can begin again without punishing yourself for yesterday. Move forward with gentleness instead of pressure.",
+        affirmation: "Today, I give myself a fresh start."
+      },
+      {
+        quote: "You can be a work in progress and still be proud of yourself.",
+        meaning: "Growth does not require you to hate who you are now. Appreciate how far you've come while making room for who you may become.",
+        affirmation: "I honor my progress, however small."
+      },
+      {
+        quote: "What you water grows. Give your attention to what matters.",
+        meaning: "Your habits, thoughts, and relationships are shaped by the attention you give them. Invest in what helps you become more alive.",
+        affirmation: "I nurture what brings goodness into my life."
+      },
+      {
+        quote: "Not every chapter is easy, but every chapter can teach you something.",
+        meaning: "You don't have to call every painful experience a gift. You can simply learn from it and choose what comes next.",
+        affirmation: "I can learn, heal, and move forward."
+      },
+      {
+        quote: "A gentle heart is not a weak heart.",
+        meaning: "You can be compassionate and still have boundaries. Kindness includes protecting your own peace.",
+        affirmation: "I can be kind without abandoning myself."
+      },
+      {
+        quote: "Happiness often lives in the things we almost overlook.",
+        meaning: "A warm cup of tea, a familiar voice, fresh air, or a moment of quiet can hold more meaning than we expect.",
+        affirmation: "I make room for small, beautiful things."
+      }
+    ];
+
+    // Select a message using the local calendar date.
+    // The same date always produces the same daily message.
+    function getDayIndex(date) {
+      const yearStart = new Date(date.getFullYear(), 0, 1);
+      const day = Math.floor(
+        (new Date(date.getFullYear(), date.getMonth(), date.getDate())
+        - yearStart) / 86400000
+      );
+
+      return (day + date.getFullYear()) % messages.length;
+    }
+
+    const today = new Date();
+
+    document.getElementById("today").textContent =
+      today.toLocaleDateString(undefined, {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric"
+      });
+
+    let currentIndex = getDayIndex(today);
+
+    function showMessage(index) {
+      const item = messages[index];
+
+      document.getElementById("message").textContent = item.quote;
+      document.getElementById("meaning").textContent = item.meaning;
+      document.getElementById("affirmation").textContent = item.affirmation;
+    }
+
+    showMessage(currentIndex);
+
+    // Reveal another thought without changing today's date.
+    document.getElementById("another").addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % messages.length;
+      showMessage(currentIndex);
+    });
+
+    // Share the current message using the device's share menu.
+    document.getElementById("share").addEventListener("click", async () => {
+      const item = messages[currentIndex];
+      const text = `${item.quote}\n\n${item.meaning}\n\n${item.affirmation}`;
+
+      try {
+        if (navigator.share) {
+          await navigator.share({
+            title: "A Little Light — Daily Positivity",
+            text
+          });
+        } else if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          alert("Your positive message has been copied! ✨");
+        } else {
+          window.prompt("Copy your positive message:", text);
+        }
+      } catch (error) {
+        if (error.name !== "AbortError") {
+          alert("You can copy your message and share it with someone.");
+        }
+      }
+    });
+  </script>
+</body>
+</html>
