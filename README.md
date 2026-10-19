@@ -28,7 +28,7 @@ Sometimes, all we need is a little light. 🌷
 ## 🌷 Live Website
 
 <p align="center">
-  <a href="https://kanchan-arya.github.io/a-little-light/">
+  <a href="https://kanchan-arya.github.io/A-Gentle-Reminder/">
     <strong>✨ Visit A Little Light ✨</strong>
   </a>
 </p>
