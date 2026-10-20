@@ -10,7 +10,7 @@
 
 ---
 
-## 💗 About the Project
+## ⚙️ About the Project
 
 **A Little Light** is a simple, aesthetic website created to bring a little positivity into your everyday life.
 
@@ -56,7 +56,7 @@ That's it! No complicated setup required. 🌼
 
 This project was created with a simple thought: positivity doesn't have to be loud or complicated. A kind word, a peaceful moment, or a gentle reminder can make a difference.
 
-May this little website remind you that you are growing, you are learning, and you deserve kindness — especially from yourself. 💗
+May this little website remind you that you are growing, you are learning, and you deserve kindness — especially from yourself. 
 
 ## 🌻 Future Improvements
 
